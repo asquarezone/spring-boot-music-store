@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>default</title>
+    <link rel="stylesheet" th:href="@{/style.css}"></link>
+</head>
+<body>
+   <div th:fragment="header" id="header">
+        <h1>
+            SPRING BOOT MUSIC STORE</h1>
+        <ul id="navlist">
+            <li class="first">
+            	<a href="/" id="current">Home</a>
+            </li>
+            <li>
+            	<a href="/store/">Store</a>
+            </li>
+        </ul>
+    </div>
+    <div layout:fragment="content" />
+</body>
+</html>
